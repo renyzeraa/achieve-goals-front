@@ -15,7 +15,7 @@ export function App() {
 
   return (
     <Dialog>
-      {data?.some(goals => goals.total > 0) ? <Summary /> : <EmptyGoals />}
+      {(data && data?.total > 0) ? <Summary /> : <EmptyGoals />}
       <CreateGoal />
     </Dialog>
   )

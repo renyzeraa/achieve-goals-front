@@ -16,7 +16,7 @@ export function GoalCompleted({ completedAt, name, id }: GoalCompletedProps) {
   }
 
   return (
-    <li className="flex items-center gap-2">
+    <li key={id} className="flex items-center gap-2">
       <CheckCircle2 className="size-4 text-pink-500" />
       <span className="text-sm text-zinc-400">
         Você completou "<span className="text-zinc-100 font-medium">{name}</span>" às <span className="text-zinc-100">{completedAt}</span>
