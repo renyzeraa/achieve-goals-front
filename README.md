@@ -2,6 +2,9 @@
 
 Achieve Goals é uma aplicação projetada para te ajudar a cadastrar e acompanhar suas metas diárias, organizadas por semana. O sistema permite que as metas sejam repetidas até 7 vezes, uma para cada dia da semana, oferecendo uma visão clara do histórico de cumprimento de metas ao longo do tempo. A comunicação entre frontend e backend é feita via APIs REST.
 
+![Metas](https://github.com/user-attachments/assets/582229a8-d763-4e42-bcfe-8745d9a33cc9)
+![Cadastrar Meta](https://github.com/user-attachments/assets/81e274a9-bc68-4049-a54b-fd036dffbdd9)
+
 ## Tecnologias Utilizadas
 
 - React
