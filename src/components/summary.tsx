@@ -19,6 +19,8 @@ export function Summary() {
     staleTime: 60 * 1000,
   })
 
+  console.log(data)
+
   if (!data) return null
 
   const firstDayOfWeek = dayjs().startOf('week').format('D MMM')
@@ -68,11 +70,10 @@ export function Summary() {
                 <div key={date} className="flex flex-col gap-4">
                   <h3 className="font-medium capitalize">{weekDay} <span className="text-zinc-400 text-xs lowercase">({formatedDate})</span></h3>
                   <ul className="flex flex-col gap-3">
-                    {goals.map(({ completedAt, id, title }) => {
-                      const keyDate = dayjs(completedAt).format('DD-MM-YYYY-HH-mm-ss')
+                    {goals.map(({ completedAt, id, title, goalCompletedId }) => {
                       const completedDate = dayjs(completedAt).format('HH:mm')
                       return (
-                        <GoalCompleted key={`${id}-${keyDate}`} id={id} name={title} completedAt={completedDate} />
+                        <GoalCompleted key={goalCompletedId} id={id} completedId={goalCompletedId} name={title} completedAt={completedDate} />
                       )
                     })}
                   </ul>

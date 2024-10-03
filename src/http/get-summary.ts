@@ -2,6 +2,7 @@ export type SummaryResponse = {
   completed: number;
   total: number;
   goalsPerDay: Record<string, {
+    goalCompletedId: string;
     completedAt: string;
     title: string;
     id: string;
